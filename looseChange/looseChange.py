@@ -34,7 +34,3 @@ def loose_change(cents):
     return(change_dict)
 
 
-
-print(loose_change(114))
-
-
