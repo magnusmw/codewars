@@ -10,9 +10,9 @@ def loose_change(cents):
     elif type(cents) == float:
         cents = math.floor(cents)
     while cents > 0:
-        if (cents / 1) > 4:
+        if (cents / 1) >= 5:
             if (cents / 5) >= 2:
-                if (cents / 10) > 2.4:
+                if (cents / 10) >= 2.5:
                     quarters = quarters + math.floor((cents / 25))
                     cents = (cents - (math.floor(cents / 25) * 25))
                 else:
